@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -18,16 +18,17 @@
 <body>
 
     <!-- About -->
-    <div class="container-fluid">
+    <div class="container">
+            <img src="./assets/sidebarright.svg" class="sidebaricon d-sm-block d-none">
         <div class="row aboutrow">
-            <div class="col"></div>
+            <div class="col spec"></div>
             <div class="col-lg-3 col-md-4 col-sm-5 col-6 about">
                 <img class="image-fluid aboutus" src="./assets/aboutus.svg" />
             </div>
-            <div class="col"></div>
+            <div class="col spec"></div>
         </div>
 
-        <div class="row">
+        <div class="row-fluid">
             <div class="col-sm-6 whatwedo">
                 <h2><b>What We Do!</b></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -38,13 +39,13 @@
                     labore et dolore magna aliqua. Ut enim ad minim veni.
                 </p>
             </div>
-            <div class="col-sm-6"></div>
+            <div class="col-sm-6 "></div>
         </div>
 
         <!-- Nwoc and aperion row -->
         <div class="row nwocAper">
             <div class="row nwocrow">
-                <div class="col"></div>
+                <div class="col spec"></div>
                 <div class="col-sm-6 d-flex align-items-center">
                     <img class="img-fluid" src="./assets/nwoc.png">
                 </div>
@@ -57,15 +58,17 @@
                         <button class="btn btn-primary btn-lg">Open NWOC</button>
                     </div>
                 </div>
-                <div class="col"></div>
+                <div class="col spec"></div>
             </div>
-            
-            <div class="row" style="margin: auto;">
-                <img class="img-fluid" style="margin:80px;" src="./assets/line.svg">
-            </div>
-            
+
+            <!-- <div class="row justify-content-center">
+                <div class="col" >
+                    <img class="img-fluid" style="margin: auto; width: 100%; " src="./assets/line.svg">
+                </div>
+            </div> -->
+
             <div class="row nwocrow flex-column-reverse flex-sm-row">
-                <div class="col"></div>
+                <div class="col spec"></div>
                 <div class="col-sm-5 apeireon">
                     <h1 class="nwochead">APEIREON</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -77,21 +80,40 @@
                 </div>
                 <div class="col-sm-5 d-flex align-items-center">
                     <img class="img-fluid" src="./assets/apeireon.svg">
-                    <div class="col"></div>
 
                     <!-- <video class="fluid" autoplay>
                         <source src="./assets/apeiron.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video> -->
                 </div>
-                <div class="col"></div>
+                <div class="col spec"></div>
             </div>
         </div>
 
         <!-- Gsoc -->
-        
+        <div class="row justify-content-center gsochead">GSOC Results @2020</div>
+        <div class="row gsoc">
+            <div class="col spec"></div>
+
+            <div class="col-sm-8">
+                <!-- row one of selections -->
+                <div class="row">
+                      
+                </div>
+                <!-- row two of selections -->
+                <div class="row">
+                   
+                </div>
+            </div>
+
+            <div class="col spec"></div>
+        </div>
 
 
+        <!-- collaborations -->
+        <div class="row collab">
+            
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
