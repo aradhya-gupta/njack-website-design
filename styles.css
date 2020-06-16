@@ -33,6 +33,9 @@ div.whatwedo p{
 /* nwoc apeireon row */
 div.nwocAper{
     background-color: black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 div.nwocrow{
@@ -40,12 +43,13 @@ div.nwocrow{
 }
 
 div.nwocrow img{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 div.nwocrow h1{
     color: white;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 div.nwocrow p{
@@ -53,6 +57,7 @@ div.nwocrow p{
     color: rgba(112, 112, 112, 1);
     font-weight: 700;
     font-size: 26.00px;
+    padding:20px;
 }
 
 div.nwocrow button{
@@ -63,18 +68,12 @@ div.nwocrow button{
 }
 
 
-@media screen and (max-width:720px){
+@media screen and (max-width:800px){
     div.nwocrow p{
-        font-size: 20.00px;
+        font-size: 23.00px;
     }
     h1.nwochead {
         font-size: 35px;
     }
 }
 
-
-
-div.between{
-    color: white;
-    height: 10px;
-}
