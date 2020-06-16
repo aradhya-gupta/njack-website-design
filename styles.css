@@ -22,10 +22,59 @@ div.whatwedo p{
     color:rgba(112, 112, 112, 1);
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:630px){
     div.whatwedo p{
         font-size: 17.00px;
         font-weight: 700;
         color:rgba(112, 112, 112, 1);
     }
+}
+
+/* nwoc apeireon row */
+div.nwocAper{
+    background-color: black;
+}
+
+div.nwocrow{
+    padding-top: 35px;
+}
+
+div.nwocrow img{
+    margin-bottom: 30px;
+}
+
+div.nwocrow h1{
+    color: white;
+    font-weight: 700;
+}
+
+div.nwocrow p{
+    text-align: center;
+    color: rgba(112, 112, 112, 1);
+    font-weight: 700;
+    font-size: 26.00px;
+}
+
+div.nwocrow button{
+    margin: 20px;
+    font-size: 20.00px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width:720px){
+    div.nwocrow p{
+        font-size: 20.00px;
+    }
+    h1.nwochead {
+        font-size: 35px;
+    }
+}
+
+
+
+div.between{
+    color: white;
+    height: 10px;
 }
