@@ -1,4 +1,8 @@
-
+div.main-container{
+    display: grid;
+    border: 2px solid black;
+    padding: 8px;
+}
 .sidebaricon{
     position: fixed;
     z-index: 2;
@@ -8,16 +12,13 @@
     -webkit-backface-visibility: hidden;
 }
 
-.spec{
-    padding: 0;
-}
-
 div.aboutrow{
     margin-bottom: 30px;
 }
 
 div.about{
     text-align: center;
+    
 }
 
 img.aboutus{
@@ -26,8 +27,7 @@ img.aboutus{
 }
 
 div.whatwedo{
-    margin-left: 30px;
-    padding: 20px 40px;
+    padding: 15px 15px;
     /* padding-left: 40px; */
 }
 div.whatwedo p{
@@ -42,12 +42,21 @@ div.whatwedo p{
         font-weight: 700;
         color:rgba(112, 112, 112, 1);
     }
+
+    div.whatwedo h2{
+        font-size: 26.00px;
+        font-weight: 700;
+        color:rgba(112, 112, 112, 1);
+    }
+    div.aboutrow{
+        margin-bottom: 0px;
+    }
 }
 
 /* nwoc apeireon row */
 div.nwocAper{
     background-color: black;
-    padding-top: 80px;
+    margin-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 20px;
 }
@@ -79,30 +88,106 @@ div.nwocrow button{
     font-size: 20.00px;
     font-weight: 700;
     border-radius: 15px;
+ 
 }
 
+.nwoc-img{
+    background-color: white;
+}
+.apeireon-img {
+     border: 2px solid black;
+}
 
 @media screen and (max-width:800px){
+    div.nwocrow{
+        padding-top: 0;
+    }
     div.nwocrow p{
         font-size: 19.00px;
     }
     h1.nwochead {
         font-size: 35px;
     }
+
+    .nwoc-img{
+     border: 2px solid black;
+     border-top: 3px solid black;
+        background-color: white;
+    }
 }
 
 /* GSOC */
 div.gsochead{
-    font-size: 49.00px;
+    font-size: 43.00px;
     font-weight: 700;
     font-style: normal;
     font-family: 'Segoe UI', Arial;
     margin-top: 27px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
-div.gsoc{
-    background-image: url('/assets/gsoc.png');
-    background-size: cover;
+@media only screen and (max-width: 720px){
+    div.gsochead{
+        font-size: 34px;
+    }
+    div.gsoc-text{
+        margin-bottom: 30px;
+    }
+    div.gsoc-text p{
+        padding: 27px;
+        font-size: 19px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
 
+button.gsoc-results{
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+
+
+
+/* collaborations */
+div.collab{
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+div.collab-head{
+    padding: 45px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 43px;
+    color:white;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 700px){
+  div.collab-head{
+      margin-bottom: 0px;
+      font-size: 33px;
+  }  
+}
+
+/* footer */
+
+div.foot-row{
+    margin-top:30px;
+}
+
+.list-group-item-action{
+    color: rgba(0,0,0,0.4499999880);
+    font-weight: 500;
+}
+
+.list-group-item-action:hover{
+    color:rgba(0, 0, 0, 0.747);
 }

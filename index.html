@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 
     <title>Njack IIT-P</title>
@@ -17,37 +17,43 @@
 
 <body>
 
-    <!-- About -->
-    <div class="container">
-            <img src="./assets/sidebarright.svg" class="sidebaricon d-sm-block d-none">
-        <div class="row aboutrow">
-            <div class="col spec"></div>
-            <div class="col-lg-3 col-md-4 col-sm-5 col-6 about">
-                <img class="image-fluid aboutus" src="./assets/aboutus.svg" />
+    <div class="container-fluid main-container">
+        <img src="./assets/sidebarright.svg" class="sidebaricon d-sm-block d-none">
+
+        <!-- About -->
+        <div class="container-fluid">
+            <div class="row aboutrow">
+                <div class="col"></div>
+                <div class="col-md-4 col-sm-5 col-7 about">
+                    <img class="image-fluid aboutus" src="./assets/aboutus.svg" />
+                </div>
+                <div class="col"></div>
             </div>
-            <div class="col spec"></div>
+
+            <div class="row flex-column-reverse flex-sm-row">
+                <div class="col-sm-5 whatwedo my-auto">
+                    <h2><b>What We Do!</b></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veni. Ut enim ad minim veni.
+                    </p>
+                </div>
+                <div class="col-sm-7 whatwedo">
+                    <img class="img-fluid" src="./assets/ID2kids_1adult_v03.png">
+                    <br />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="row-fluid">
-            <div class="col-sm-6 whatwedo">
-                <h2><b>What We Do!</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veni.
-                </p>
-                <br />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veni.
-                </p>
-            </div>
-            <div class="col-sm-6 "></div>
-        </div>
 
         <!-- Nwoc and aperion row -->
-        <div class="row nwocAper">
+        <div class="row-fluid nwocAper">
             <div class="row nwocrow">
-                <div class="col spec"></div>
-                <div class="col-sm-6 d-flex align-items-center">
-                    <img class="img-fluid" src="./assets/nwoc.png">
+                <div class="col"></div>
+                <div class="col-sm-5 d-flex align-items-center">
+                    <img class="img-fluid nwoc-img" src="./assets/nwoc.png">
                 </div>
                 <div class="col-sm-5">
                     <h1 class="nwochead">NWOC</h1>
@@ -58,7 +64,7 @@
                         <button class="btn btn-primary btn-lg">Open NWOC</button>
                     </div>
                 </div>
-                <div class="col spec"></div>
+                <div class="col"></div>
             </div>
 
             <!-- <div class="row justify-content-center">
@@ -66,9 +72,11 @@
                     <img class="img-fluid" style="margin: auto; width: 100%; " src="./assets/line.svg">
                 </div>
             </div> -->
-
+            <br><br>
+            <br><br>
+            <br><br>
             <div class="row nwocrow flex-column-reverse flex-sm-row">
-                <div class="col spec"></div>
+                <div class="col"></div>
                 <div class="col-sm-5 apeireon">
                     <h1 class="nwochead">APEIREON</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -79,41 +87,125 @@
                     </div>
                 </div>
                 <div class="col-sm-5 d-flex align-items-center">
-                    <img class="img-fluid" src="./assets/apeireon.svg">
+                    <img class="img-fluid apeireon-img" src="./assets/apeireon.svg">
 
                     <!-- <video class="fluid" autoplay>
                         <source src="./assets/apeiron.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video> -->
                 </div>
-                <div class="col spec"></div>
+                <div class="col"></div>
             </div>
         </div>
 
         <!-- Gsoc -->
-        <div class="row justify-content-center gsochead">GSOC Results @2020</div>
-        <div class="row gsoc">
-            <div class="col spec"></div>
+        <div class="row-fluid">
+            <div class="col gsochead">
+                GSOC Results @2020
+            </div>
+        </div>
 
-            <div class="col-sm-8">
+        <!-- visible on mobile and sm only -->
+        <div class="row d-md-none" style="margin-bottom: 45px;">
+            <div class="col d-flex justify-content-center mobile-gsoc">
+                <img class="img-fluid" src="assets/gsoc.png">
+            </div>
+            <div class="row-fluid gsoc-text">
+                <p style="color: rgba(112, 112, 112, 1);">Google Summer of Code is the most prestigious
+                    global program focused on bringing
+                    student developers into open source software development.<br><br>
+                    Congrats to all the six students of our institute who have been selected in the year 2020!</p>
+                <button class="btn btn-danger gsoc-results">View Results</button>
+            </div>
+        </div>
+
+
+        <div class="row-fluid gsoc">
+            <div class="col "></div>
+
+            <div class="col-sm-10">
                 <!-- row one of selections -->
                 <div class="row">
-                      
+
                 </div>
                 <!-- row two of selections -->
                 <div class="row">
-                   
+
                 </div>
             </div>
 
-            <div class="col spec"></div>
+            <div class="col"></div>
         </div>
 
 
         <!-- collaborations -->
-        <div class="row collab">
-            
+        <div class="container-fluid">
+            <div class="row justify-content-center collab">
+                <div class="col-12 collab-head">Collaborations</div>
+                <div class="col-4 d-flex justify-content-center">
+                    <img class="img-fluid" src="./assets/Image_11.png">
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <img class="img-fluid" src="./assets/Image_13.png">
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <img class="img-fluid" src="./assets/github.png">
+                </div>
+            </div>
         </div>
+
+        <!-- footer -->
+        <div class="container-fluid">
+            <div class="row foot-row">
+                <div class="col">
+                    <div class="list-group list-group-flush">
+                        <button type="button" class="list-group-item list-group-item-action" disabled>
+                            <h4>Upcoming Events</h4>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b>NWOC</b></button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b>Apeireon</b></button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b>Codesprint</b></button>
+                    </div>
+                </div>
+
+                <div class="col-md col-12">
+                    <div class="list-group list-group-flush">
+                        <button type="button" class="list-group-item list-group-item-action" disabled>
+                            <h4>Contact Us</h4>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <img height="30px" width="26px" src="./assets/LOCATION.png"><b>IIT Patna, Bihta, Bihar</b></button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <img height="30px" width="26px" src="./assets/LOCATION.png"><b>999999999999</b></button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <img height="30px" width="30px" src="./assets/SEND.png"><b>njack@iitp.ac.in</b></button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="list-group list-group-flush">
+                        <button type="button" class="list-group-item list-group-item-action" disabled>
+                            <h4>NJACK</h4>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua.</b></button>
+                        
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <img height="36px"  width="36px" src="./assets/git.png">
+                            <img height="36px"  width="36px" src="./assets/IG.png">
+                            <img height="36px"  width="36px" src="./assets/TWITTER.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
     <!-- Optional JavaScript -->
