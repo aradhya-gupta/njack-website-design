@@ -16,8 +16,67 @@
 </head>
 
 <body>
-
+    <!-- navbar -->
+        <nav>
+            <div class="logo">
+                <h4>NJACK</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+    
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    
     <div class="container-fluid main-container">
+
+        <!-- Home -->
+        <div class="container-fluid main-homepage-container">
+            <div class="bg container-fluid"></div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-5 njack-block">
+                    <img class="njack-logo" src="./assets/Njack_logo.png" alt="njack-logo">
+                    <br><br>
+                    <h2 class="not-just-text">Not Just Another Coding Club</h2>
+                    <br>
+                    <p class="home-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Dignissim suspendisse.
+                    </p>
+                    <button class="btn btn-lg home-but">Learn More</button>
+                </div>
+
+                <div class="col-md-5 m-auto">
+                    <img class="img-fluid" src="./assets/Main photo.png">
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row angbrack-row">
+                <div class="col home-clip">
+                    <img class="home-clip-img" src="./assets/angbrack.svg">
+                    <p class="angbrack-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+                <div class="col home-clip">
+                    <img src="./assets/angbrack.svg">
+                    <p class="angbrack-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+                <div class="col home-clip">
+                    <img src="./assets/angbrack.svg">
+                    <p class="angbrack-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+
+            </div>
+
+        </div>
 
         <div class="sidebaricon d-none d-lg-block">
             <img src="./assets/Instagram – 1.png"><br><br>
@@ -25,6 +84,11 @@
             <img src="./assets/Twitter – 1.png"><br><br>
             <img src="./assets/Github – 1.png">
         </div>
+
+
+        <br><br><br>
+        <hr class="nwoc-aper-line">
+        <br><br>
 
         <!-- About -->
         <div class="container-fluid">
@@ -93,15 +157,12 @@
                 <div class="col-sm-5 d-flex align-items-center">
                     <img class="img-fluid apeireon-img" src="./assets/apeireon.svg">
 
-                    <!-- <video class="fluid" autoplay>
-                        <source src="./assets/apeiron.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video> -->
                 </div>
                 <div class="col"></div>
             </div>
         </div>
-
+        <hr class="nwoc-aper-line">
+        <br><br>
         <!-- Gsoc -->
         <div class="row-fluid">
             <div class="col gsochead">
@@ -124,37 +185,31 @@
         </div>
 
         <!-- visible on md and above -->
-        <div class="row d-none d-md-block gsoc">
-            <div class="col "></div>
-
-            <div class="col-sm-10">
-                <!-- row one of selections -->
-                <div class="row justify-content-center">
-                    <!-- one person -->
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img class="img" src="./assets/Ellipse_49.png">
-                            </div>
-                            <div class="col-md-6">
-                                <h3>Daniel<h3>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-
-                    </div>
+        <div class="container-fluid d-none d-md-block">
+            <div class="row gsoc justify-content-center">
+                <div class="col-md-3 magic">
+                    <img class="img-fluid magic-img" src="./assets/Ellipse_49_d.png">
+                    <p class="gsoc-para">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
                 </div>
-                <!-- row two of selections -->
-                <div class="row justify-content-center">
-
+                <div class="col-md-3 magic">
+                    <img class="img-fluid magic-img" src="./assets/Ellipse_49_ea.png">
+                    <p class="gsoc-para">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </div>
+                <div class="col-md-3 magic">
+                    <img class="img-fluid magic-img" src="./assets/Ellipse_49.png">
+                    <p class="gsoc-para">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
                 </div>
             </div>
-
-            <div class="col"></div>
+            <button class="btn btn-lg gbut">See All</button>
         </div>
+
+
 
 
         <!-- collaborations -->
@@ -176,7 +231,7 @@
         <!-- footer -->
         <div class="container-fluid">
             <div class="row foot-row">
-                <div class="col">
+                <div class="col-md  d-none">
                     <div class="list-group list-group-flush">
                         <button type="button" class="list-group-item list-group-item-action" disabled>
                             <h4>Upcoming Events</h4>
@@ -229,7 +284,9 @@
 
     </div>
 
+
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
